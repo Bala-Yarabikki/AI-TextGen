@@ -1,0 +1,2 @@
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.323c769945a351daa25546176f8208b3004b6f563438a7603e7932bae9025925 filter=lfs diff=lfs merge=lfs -text
