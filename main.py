@@ -9,12 +9,9 @@ ai = aitextgen()
 #prompt_text = "Machine Learning is awesome"
 prompt_text = st.text_input(label="Enter input text", value="Machine learning is Beautiful")
 
-@st.cache()
-def spinner():
-    with st.spinner("AI is on force........."):
-        gpt_text = ai.generate_one(prompt=prompt_text, max_length=200)
-    return gpt_text
+with st.spinner("AI is on force........."):
+    gpt_text = ai.generate_one(prompt=prompt_text, max_length=200)
 
-# #st.balloons()
+
 st.success("Machine Learning Generated the text")
-st.text(spinner())
+st.text(gpt_text)
